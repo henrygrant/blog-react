@@ -3,9 +3,6 @@ label: blog-post
 hide_body: false
 fields:
 - type: text
-  name: templateKey
-  label: templateKey
-- type: text
   name: title
   label: title
 - type: datetime
