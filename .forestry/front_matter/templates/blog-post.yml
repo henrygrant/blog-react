@@ -21,4 +21,5 @@ fields:
   name: tags
   label: tags
 pages:
+- src/pages/blog/derp-derp.md
 - src/pages/blog/sample-blog.md
