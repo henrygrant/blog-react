@@ -4,19 +4,17 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: src/pages/about.md
+  label: About Page
+  match: "**/*"
+- type: document
+  path: src/index.md
+  label: Main Page
+  match: "**/*"
 - type: directory
   path: src/pages/blog
   label: Blog Posts
-  create: all
-  match: "**/*"
-- type: directory
-  path: src/pages/about
-  label: About Page
-  create: all
-  match: "**/*"
-- type: directory
-  path: src/pages
-  label: Landing Page
   create: all
   match: "**/*"
 upload_dir: uploads
