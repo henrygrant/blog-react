@@ -1,26 +1,22 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: "/"
 webhook_url: 
 sections:
+- type: document
+  path: src/pages/about/index.md
+  label: About Page
+- type: document
+  path: src/pages/index.md
+  label: Main Page
 - type: directory
   path: src/pages/blog
   label: Blog Posts
   create: all
   match: "**/*"
-- type: directory
-  path: etc/pages
-  label: About Page
-  create: all
-  match: "**/*"
-- type: directory
-  path: src/pages
-  label: Landing Page
-  create: all
-  match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: static/img
+public_path: "/static/img"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
