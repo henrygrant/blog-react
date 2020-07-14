@@ -5,13 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: src/pages/about.md
+  path: src/pages/about/index.md
   label: About Page
-  match: "**/*"
 - type: document
-  path: src/index.md
+  path: src/pages/index.md
   label: Main Page
-  match: "**/*"
 - type: directory
   path: src/pages/blog
   label: Blog Posts
