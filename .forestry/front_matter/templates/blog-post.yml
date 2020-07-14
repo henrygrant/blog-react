@@ -1,0 +1,25 @@
+---
+label: blog-post
+hide_body: false
+fields:
+- type: text
+  name: templateKey
+  label: templateKey
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: boolean
+  name: featuredpost
+  label: featuredpost
+- type: file
+  name: featuredimage
+  label: featuredimage
+- type: textarea
+  name: description
+  label: description
+- type: list
+  name: tags
+  label: tags
