@@ -23,3 +23,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- src/pages/blog/artist-spotlight-two-another.md
