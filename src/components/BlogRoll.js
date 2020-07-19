@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import { Container, Row, Col } from 'react-bootstrap'
 
 class BlogRoll extends React.Component {
   render() {
@@ -9,26 +10,28 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
-        {posts &&
-          posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
+      <Row>
+      {posts &&
+        posts.map(({ node: post }) => (
+          <Col key={post.id} xs={12} sm={6} md={4}>
+            <article
+              className={`blog-list-item card ${
+                post.frontmatter.featuredpost ? 'is-featured' : ''
+              }`}
+            > 
+              {post.frontmatter.featuredimage ? (
+              <div className="card-img-top">
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: post.frontmatter.featuredimage,
+                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                  }}
+                />
+              </div>
+              ) : null}
+              <div className="card-body">
                 <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
+                  
                   <p className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
@@ -36,10 +39,9 @@ class BlogRoll extends React.Component {
                     >
                       {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
+                    <div>
                       {post.frontmatter.date}
-                    </span>
+                    </div>
                   </p>
                 </header>
                 <p>
@@ -50,10 +52,11 @@ class BlogRoll extends React.Component {
                     Keep Reading →
                   </Link>
                 </p>
-              </article>
-            </div>
-          ))}
-      </div>
+              </div>
+            </article>
+          </Col>
+        ))}
+      </Row>
     )
   }
 }
@@ -88,7 +91,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 400, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
