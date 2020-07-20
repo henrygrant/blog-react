@@ -58,13 +58,13 @@ export default class Index extends React.Component {
                       <input name="bot-field" onChange={this.handleChange} />
                     </label>
                   </div>
-                  <div className="field">
-                    <label className="label" htmlFor={'name'}>
+                  <div classname="mt-3">
+                    <label className="badge" htmlFor={'name'}>
                       Your name
                     </label>
-                    <div className="control">
+                    <div>
                       <input
-                        className="input"
+                        className="form-control"
                         type={'text'}
                         name={'name'}
                         onChange={this.handleChange}
@@ -73,13 +73,13 @@ export default class Index extends React.Component {
                       />
                     </div>
                   </div>
-                  <div className="field">
-                    <label className="label" htmlFor={'email'}>
+                  <div className="mt-3">
+                    <label className="badge" htmlFor={'email'}>
                       Email
                     </label>
-                    <div className="control">
+                    <div>
                       <input
-                        className="input"
+                        className="form-control"
                         type={'email'}
                         name={'email'}
                         onChange={this.handleChange}
@@ -88,13 +88,13 @@ export default class Index extends React.Component {
                       />
                     </div>
                   </div>
-                  <div className="field">
-                    <label className="label" htmlFor={'message'}>
+                  <div className="mt-3">
+                    <label className="badge" htmlFor={'message'}>
                       Message
                     </label>
                     <div className="control">
                       <textarea
-                        className="textarea"
+                        className="form-control"
                         name={'message'}
                         onChange={this.handleChange}
                         id={'message'}
@@ -102,8 +102,8 @@ export default class Index extends React.Component {
                       />
                     </div>
                   </div>
-                  <div className="field">
-                    <button className="button is-link" type="submit">
+                  <div className="mt-3">
+                    <button className="btn btn-success" type="submit">
                       Send
                     </button>
                   </div>
