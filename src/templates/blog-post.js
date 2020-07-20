@@ -20,7 +20,7 @@ export const BlogPostTemplate = ({
   return (
     <section>
       {helmet || ''}
-      <Container>
+      <Container className="blog-post">
         <Row>
           <Col>
             <h1>
