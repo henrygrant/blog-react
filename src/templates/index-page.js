@@ -17,7 +17,7 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <div
-      className="full-width-image mt-0"
+      className="full-width-image mb-3"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -38,31 +38,35 @@ export const IndexPageTemplate = ({
       >
         <h1
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+            // boxShadow:
+            //   'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
+            // backgroundColor: 'rgb(255, 68, 0)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
+            display: 'flex',
+            'justify-content': 'center'
           }}
         >
           {title}
         </h1>
         <h3
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+            // boxShadow:
+            //   'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
+            // backgroundColor: 'rgb(255, 68, 0)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
+            display: 'flex',
+            'justify-content': 'center'
           }}
         >
           {subheading}
         </h3>
       </div>
     </div>
-    <section className="section section--gradient">
+    <section>
       <div className="container">
         <div className="section">
           <div className="columns">

@@ -40,7 +40,12 @@ const MainNav = class extends React.Component {
       <Navbar bg="light" expand="lg" fixed="top">
         {/* container */}
         <Link to="/">
-          <Navbar.Brand as="span">Henry G</Navbar.Brand>
+          <Navbar.Brand as="span" style={{
+            'background-color': 'rbga(52,58,64,0.4)',
+            'border-radius': '3rem',
+            'padding-left': '1rem',
+            'padding-right': '1rem'
+          }}>Henry G</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
