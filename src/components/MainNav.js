@@ -37,7 +37,7 @@ const MainNav = class extends React.Component {
 
   render() {
     return (
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" fixed="top">
         {/* container */}
         <Link to="/">
           <Navbar.Brand as="span">Henry G</Navbar.Brand>
