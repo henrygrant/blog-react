@@ -6,4 +6,4 @@ heading: Henry Grant
 subheading: Code. Opinions. Greatness.
 
 ---
-Here is some example text
+henrygrant.dev is a dumping ground for thoughts, opinions, code experiments, and anything else I can think up. This site will change appearance and have more features added over time. 
