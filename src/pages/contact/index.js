@@ -39,7 +39,7 @@ export default class Index extends React.Component {
       <Layout>
         <section>
           <Row>
-            <Col>
+            <Col xs={12} md={10} lg={6} className="mx-auto">
               <h1>Contact</h1>
               <form
                 name="contact"
@@ -101,7 +101,7 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="mt-3">
+                <div className="mt-3 d-flex justify-content-end">
                   <button className="btn btn-success" type="submit">
                     Send
                   </button>
