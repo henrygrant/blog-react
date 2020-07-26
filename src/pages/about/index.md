@@ -4,7 +4,7 @@ path: "/about"
 title: About me
 
 ---
-Thanks for checking out my site! Here's a little bit about me...
+![](/img/henry.jpg)
 
 ### Work info
 
