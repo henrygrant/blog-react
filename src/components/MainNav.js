@@ -37,14 +37,14 @@ const MainNav = class extends React.Component {
 
   render() {
     return (
-      <Navbar bg="light" expand="lg" fixed="top">
+      <Navbar bg="light" expand="sm" fixed="top">
         {/* container */}
         <Link to="/">
           <Navbar.Brand as="span" style={{
-            'background-color': 'rbga(52,58,64,0.4)',
-            'border-radius': '3rem',
-            'padding-left': '1rem',
-            'padding-right': '1rem'
+            backgroundColor: 'rbga(52,58,64,0.4)',
+            borderRadius: '3rem',
+            paddingLeft: '1rem',
+            paddingRight: '1rem'
           }}>Henry G</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

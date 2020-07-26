@@ -4,7 +4,6 @@ import { Link, graphql } from 'gatsby'
 import { Row, Col } from 'react-bootstrap'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -50,7 +49,7 @@ export const IndexPageTemplate = ({
                   lineHeight: '1',
                   padding: '0.25em',
                   display: 'flex',
-                  'justify-content': 'center'
+                  justifyContent: 'center'
                 }}
               >
                 {title}
@@ -61,7 +60,7 @@ export const IndexPageTemplate = ({
                   lineHeight: '1',
                   padding: '0.25em',
                   display: 'flex',
-                  'justify-content': 'center'
+                  justifyContent: 'center'
                 }}
               >
                 {subheading}
@@ -71,15 +70,15 @@ export const IndexPageTemplate = ({
         </Col>
       </Row>
       <section className="row">
-        <PageContent className="col-12" content={content} />
+        <PageContent className="col-auto mx-auto text-center" content={content} />
         <Col xs={12}>
           <h3>
-            Latest stories
+            Latest Posts
           </h3>
           <BlogRoll />
           <div className="d-flex justify-content-center mb-3">
             <Link className="btn btn-light" to="/blog">
-              Read more
+              All Posts
             </Link>
           </div>
         </Col>

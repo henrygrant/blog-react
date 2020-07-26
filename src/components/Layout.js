@@ -49,7 +49,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <MainNav />
-      <Container fluid style={{'margin-top': '70px'}}>{children}</Container>
+      <Container fluid style={{marginTop: '70px'}}>{children}</Container>
     </div>
   )
 }

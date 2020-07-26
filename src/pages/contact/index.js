@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-import { Container, Row, Col, Form } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 
 function encode(data) {
   return Object.keys(data)
@@ -57,7 +57,7 @@ export default class Index extends React.Component {
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
                 </div>
-                <div classname="mt-3">
+                <div className="mt-3">
                   <label className="badge" htmlFor={'name'}>
                     Your name
                   </label>
