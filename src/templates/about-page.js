@@ -3,23 +3,19 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section>
-      <Container>
-        <Row>
-          <Col>
-            <h2>
-              {title}
-            </h2>
-            <PageContent className="content" content={content} />
-          </Col>
-        </Row>
-      </Container>
+    <section className="row">
+      <Col xs={12} lg={8} className="mx-auto">
+        <h2>
+          {title}
+        </h2>
+        <PageContent className="content" content={content} />
+      </Col>
     </section>
   )
 }
