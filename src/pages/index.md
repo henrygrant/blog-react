@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Henry Grant
-image: "/img/artloeb.jpg"
+image: ''
 heading: Henry Grant
 subheading: Code. Opinions. Greatness.
 mainpitch:
