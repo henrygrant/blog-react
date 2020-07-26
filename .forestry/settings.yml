@@ -7,7 +7,6 @@ sections:
 - type: document
   path: src/pages/index.md
   label: Main Page
-  match: "**/*"
 - type: document
   path: src/pages/about/index.md
   label: About Page
