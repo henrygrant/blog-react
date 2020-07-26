@@ -6,4 +6,4 @@ heading: Henry Grant
 subheading: Code. Opinions. Greatness.
 
 ---
-henrygrant.dev is a dumping ground for thoughts, opinions, code experiments, and anything else I can think up. This site will change appearance and have more features added over time. 
+[henrygrant.dev](henrygrant.dev "henrygrant.dev") is a dumping ground for thoughts, opinions, code experiments, and anything else I can think up. This site will change appearance and have features added over time. 
