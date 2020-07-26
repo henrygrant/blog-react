@@ -4,7 +4,7 @@ path: "/about"
 title: About me
 
 ---
-![](/img/henry.jpg)
+![picture of henry](/img/henry.jpg "henry.jpg")
 
 ### Work info
 
