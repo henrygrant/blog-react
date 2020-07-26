@@ -8,6 +8,9 @@ fields:
 - type: text
   name: title
   label: title
+- type: textarea
+  name: description
+  label: description
 - type: file
   name: image
   label: image
@@ -17,16 +20,3 @@ fields:
 - type: text
   name: subheading
   label: subheading
-- type: field_group
-  name: mainpitch
-  label: mainpitch
-  fields:
-  - type: text
-    name: title
-    label: title
-  - type: textarea
-    name: description
-    label: description
-- type: textarea
-  name: description
-  label: description
