@@ -2,8 +2,8 @@
 templateKey: index-page
 title: Henry Grant
 image: "/img/artloeb.jpg"
-heading: Henry Grant
-subheading: Code. Opinions. Greatness.
+heading: henrygrant.dev
+subheading: The Code Shall Prevail
 
 ---
 [henrygrant.dev](henrygrant.dev "henrygrant.dev") is a dumping ground for thoughts, opinions, code experiments, and anything else I can think up. 

@@ -36,7 +36,6 @@ export const IndexPageTemplate = ({
             <div
               style={{
                 display: 'flex',
-                height: '150px',
                 lineHeight: '1',
                 justifyContent: 'space-around',
                 alignItems: 'left',
@@ -49,7 +48,9 @@ export const IndexPageTemplate = ({
                   lineHeight: '1',
                   padding: '0.25em',
                   display: 'flex',
-                  justifyContent: 'center'
+                  justifyContent: 'center',
+                  backgroundColor: 'rgba(0,0,0,0.5)',
+                  marginBottom: 0
                 }}
               >
                 {title}
@@ -60,7 +61,8 @@ export const IndexPageTemplate = ({
                   lineHeight: '1',
                   padding: '0.25em',
                   display: 'flex',
-                  justifyContent: 'center'
+                  justifyContent: 'center',
+                  backgroundColor: 'rgba(0,0,0,0.5)'
                 }}
               >
                 {subheading}
@@ -69,7 +71,7 @@ export const IndexPageTemplate = ({
           </div>
         </Col>
       </Row>
-      <section className="row">
+      <section className="row mt-2">
         <PageContent className="col-auto mx-auto text-center" content={content} />
         <Col xs={12}>
           <h3>
