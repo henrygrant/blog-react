@@ -1,27 +1,25 @@
-
-
-// Config vars
-// Kaldi logo brand color: #FD461E
-// $kaldi-red: #D64000;
-// $kaldi-red-invert: #fff;
-
-// $primary: $kaldi-red;
-// // $primary-invert: $kaldi-red-invert;
-// $body-color: #FE9677;
-// $body-background-color: #fff;
-// $black: #2b2523;
-
-// //Menu overrides
-// $menu-item-color: #fff;
-// $menu-item-hover-color: $black !important;
-// $menu-item-hover-background-color: $black;
-// $menu-item-active-color: $kaldi-red-invert;
-// $menu-item-active-background-color:	$kaldi-red-invert;
-// $menu-list-border-left: 1px solid $kaldi-red-invert;
-// $menu-label-color: #fff;
-
-
 @import "~bootstrap/scss/bootstrap";
+
+a {
+  color: SlateGray;
+  text-decoration: none;
+
+  &:visited{
+    color: SlateGray;
+    text-decoration: none;
+    opacity: 0.42;
+  }
+  &:hover{
+    color: SlateGray;
+    opacity: 0.7;
+    text-decoration: none;
+  }
+  &:active{
+    color: SlateGray;
+    opacity: 1;
+    text-decoration: none;
+  }
+}
 
 .content .taglist {
   list-style: none;
@@ -54,7 +52,6 @@
   justify-content: center;
   align-items: center;
 }
-  
 
 .full-width-image {
   height: 100vh;
@@ -65,14 +62,11 @@
   align-items: center;
 }
 
-
-// Override for use of svg's from https://simpleicons.org/
 .icon svg {
   width: 1.5rem;
   height: 1.5rem;
   fill: currentColor;
 }
-  
 
 // blog
 .blog-post {
@@ -81,12 +75,11 @@
   }
 }
 
-// blog roll
 .blog-list-item {
   margin-bottom: 2rem;
 
   &.is-featured {
-    background-color: #d6400033;
+    background-color: #0000001e;
   }
 
   header {
@@ -96,26 +89,6 @@
 
 .about-page {
   img {
-    width: 50%;
     border-radius: 3rem;
   }
 }
-
-
-// // responsiveness
-// +tablet-only {
-//   .blog-list-item .featured-thumbnail {
-//     flex-basis: 50%;
-//   }
-// }
-
-// +mobile {
-//   .blog-list-item header {
-//     display: block;
-//   }
-//   .blog-list-item .featured-thumbnail {
-//     text-align: center;
-//     max-width: 70%;
-//     margin: 0 0 1em;
-//   }
-// }

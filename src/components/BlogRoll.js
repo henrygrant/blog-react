@@ -32,7 +32,7 @@ class BlogRoll extends React.Component {
               <div className="card-body">
                 <header>
                   
-                  <p className="post-meta">
+                  <div className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
                       to={post.fields.slug}
@@ -42,7 +42,7 @@ class BlogRoll extends React.Component {
                     <div>
                       {post.frontmatter.date}
                     </div>
-                  </p>
+                  </div>
                 </header>
                 <p>
                   {post.excerpt}
@@ -91,7 +91,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 400, quality: 100) {
+                    fluid(maxWidth: 750, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
